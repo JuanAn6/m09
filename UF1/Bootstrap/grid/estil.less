@@ -1,0 +1,120 @@
+
+html {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh;
+    
+    body{
+        display: grid;
+        background-color: rgb(176, 176, 176);
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header header header"
+        "nav nav nav nav nav"
+        "aside main main main main"
+        "footer footer footer footer footer";
+        
+        //treure un pixel que fa que surti scroll; 2 linies seguents
+        min-height: calc(100vh - 1px);
+        height: 100%;
+        
+        header{
+            background-color: rgb(184, 123, 10);
+            padding:10px;
+            grid-area: header;
+            position: relative;
+            .flags{
+                position: absolute;
+                display: flex;
+                top: 25px;
+                right: 20px;
+                li{
+                    padding: 10px;
+                    img{
+                        width: 20px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        nav{
+            grid-area: nav;
+            background-color: orange;
+            ul{
+                display: flex;
+                justify-content: space-around;
+                li{
+                    font-size: large;
+                    display: block;
+                    padding: 15px;
+                }
+            }
+        }
+        // #principal{
+        //     display: flex;
+            
+        //     flex: 1;
+            aside{
+                grid-area: aside;
+            }
+            aside, main{
+                padding: 25px;
+                line-height: 15px;
+            }
+
+            main{
+                grid-area: main;
+                h1{
+                    color: rgb(150, 97, 0);
+                    font-size: 30px;
+                    padding-top: 10px;
+                    padding-bottom: 20px;
+                    font-weight: bold;
+                }
+                section{
+                    display: flex;
+                    flex-wrap: wrap;
+                    row-gap: 10px;
+                    column-gap: 10px;
+                    article{
+                        border-radius: 10px;
+                        flex:30%;
+                        background-color: rgb(255, 140, 0);
+                        //border: 1px solid black;
+                        padding: 10px;
+                        display: flex;
+                        box-sizing: border-box;
+                        div{
+                            padding: 10px;
+                            h3{
+                                font-weight: bold;
+                                font-size: 15px;
+                                padding-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+
+        
+        footer{
+            grid-area: footer;
+            display:flex;
+            justify-content: space-around;
+            background-color: orange;
+            padding: 10px;
+            ul{
+                li{
+                    display: block;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+

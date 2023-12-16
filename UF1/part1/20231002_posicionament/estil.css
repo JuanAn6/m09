@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+}
+html body {
+  height: 100%;
+}
+html main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html main .capsa {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: rebeccapurple;
+}
+html main .capsa:after,
+html main .capsa:before {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 25px;
+  background-color: aqua;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
+  transition: 1000ms;
+}
+html main .capsa:before {
+  left: auto;
+  right: 100%;
+  background-color: red;
+}
+html main .capsa:hover:after {
+  top: 100%;
+  bottom: auto;
+  left: 50%;
+  transition: 1000ms;
+  transform: translateX(-50%);
+}
+html main .capsa:hover:before {
+  background-color: red;
+  top: auto;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  transition: 1000ms;
+}

@@ -1,0 +1,34 @@
+html#mila {
+  align-items: center;
+}
+html#mila .yingyang {
+  position: relative;
+  display: flex;
+  width: 500px;
+  height: 500px;
+  border: 10px solid black;
+  border-radius: 50%;
+  background: linear-gradient(black 50%, white 50%);
+  margin: 0px auto;
+  margin-top: 1%;
+}
+html#mila .yingyang:before,
+html#mila .yingyang:after {
+  display: block;
+  position: relative;
+  content: "";
+  border-radius: 50%;
+  height: 10%;
+  width: 10%;
+  top: 25%;
+}
+html#mila .yingyang:after {
+  background-color: white;
+  border: 100px solid black;
+  left: 0;
+}
+html#mila .yingyang:before {
+  background-color: black;
+  border: 100px solid white;
+  right: 0;
+}

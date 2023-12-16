@@ -1,0 +1,19 @@
+
+.generarInputs(@count){
+    each(range(1,@count,1),{
+        input[type=radio]:nth-child(@{value}):checked ~ ul>li:nth-child(@{value}) {
+            display: block;
+        }
+    });
+}
+
+body{
+    .generarInputs(5);
+    
+    ul{
+        li{
+            display:none;
+        }
+        
+    }
+}

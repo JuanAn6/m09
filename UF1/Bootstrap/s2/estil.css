@@ -1,0 +1,31 @@
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+html body {
+  background-color: #ffffff;
+}
+html body header {
+  background-color: #b87b0a;
+}
+html body nav {
+  background-color: orange;
+}
+html body nav ul li {
+  font-size: large;
+}
+html body #principal main h1 {
+  color: #966100;
+  font-size: 30px;
+  font-weight: bold;
+}
+html body #principal main section article {
+  background-color: #ff8c00;
+}
+html body #principal main section article div h3 {
+  font-weight: bold;
+  font-size: 15px;
+}
+html body footer {
+  background-color: orange;
+}

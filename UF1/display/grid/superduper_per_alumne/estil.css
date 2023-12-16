@@ -1,0 +1,58 @@
+:root {
+  --bgcolor: lime;
+}
+html {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html body {
+  position: relative;
+}
+html body .llegenda {
+  position: absolute;
+  display: flex;
+  top: 20px;
+  left: 400px;
+}
+html body .llegenda label {
+  writing-mode: vertical-rl;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+}
+html body .llegenda .metall-alcali {
+  background-color: orange;
+}
+html body .taula_periodica {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+}
+html body .taula_periodica .element {
+  grid-column: var(--columna) / span 1;
+  grid-row: var(--fila) / span 1;
+  background-color: var(--bgcolor);
+}
+html body .taula_periodica .gap {
+  border: none;
+}
+html body .taula_periodica .simbol {
+  font-weight: bold;
+}
+html body .taula_periodica .col-18 {
+  background-color: #00aaff;
+}
+html body .taula_periodica .col-2 {
+  background-color: yellow;
+}
+html body .taula_periodica .col-1 {
+  background-color: orange;
+}
+html body .taula_periodica .fil-1 {
+  background-color: greenyellow;
+}
+html body .taula_periodica .fil-9 {
+  background-color: #e09d66;
+}
+html body .taula_periodica .fil-8 {
+  background-color: white;
+}

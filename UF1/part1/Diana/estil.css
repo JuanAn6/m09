@@ -1,0 +1,18 @@
+html {
+  height: 100%;
+}
+html body {
+  height: 100%;
+}
+html main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html main .capsa {
+  width: 600px;
+  height: 600px;
+  background-color: black;
+  border-radius: 50%;
+}

@@ -1,0 +1,75 @@
+:root{
+    --bgcolor: lime;
+}
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+body{
+    position:relative;
+    
+    .llegenda{
+        position: absolute;
+        display:flex;
+        top:20px;
+        left: 400px;
+        label{
+            writing-mode: vertical-rl;
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid black;
+        }
+        .metall-alcali{
+            background-color: orange;
+        }
+        
+    }
+    .taula_periodica{
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+
+        // each(range(1,19,1),{
+        //         .col-@{index}{
+        //             grid-column: @value;
+        //             border: 1px solid black;
+        //         }
+        //         .fil-@{index}{
+        //             grid-row: @value;
+        //             background-color: rgb(216, 174, 153);
+        //         }
+        // });
+
+        
+
+        .element{
+            grid-column: var(--columna) / span 1;
+            grid-row: var(--fila) /span 1;
+            background-color: var(--bgcolor);
+        }
+        .gap{
+            border: none;
+        }
+        .simbol{
+            font-weight: bold;
+        }
+        .col-18{
+            background-color: rgb(0, 170, 255);
+        }
+        .col-2{
+            background-color: yellow;
+        }
+        .col-1{
+            background-color: orange;
+        }
+        .fil-1{
+            background-color: greenyellow;
+        }
+        .fil-9{
+            background-color: rgb(224, 157, 102);
+        }
+        .fil-8{
+            background-color: white;
+        }
+    }
+}
+}
+

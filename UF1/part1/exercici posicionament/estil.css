@@ -1,0 +1,108 @@
+html {
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 100vh;
+  min-width: 1000px;
+}
+html body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+html body .comic-strip {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+html body .comic-strip::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 20px;
+  top: 50%;
+  background-color: black;
+}
+html body .comic {
+  display: flex;
+  position: relative;
+  bottom: 220px;
+  width: 300px;
+  height: fit-content;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  bottom: 200px;
+  padding: 50px;
+  margin: 1%;
+  z-index: 1;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+html body .comic::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 208px;
+  border: 5px solid black;
+  border-radius: 30px;
+  top: 100%;
+  z-index: 0;
+}
+html body .comic:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  top: 80%;
+  left: 35%;
+  transform: rotate(30deg);
+  z-index: 2;
+}
+html body .joker {
+  background-color: greenyellow;
+}
+html body .joker::after {
+  background-image: url(images/joker.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  z-index: 1;
+}
+html body .joker::before {
+  border-top: 100px solid greenyellow;
+}
+html body .batman {
+  background-color: grey;
+}
+html body .batman::after {
+  background-image: url(images/batman.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 1;
+}
+html body .batman::before {
+  border-top: 100px solid grey;
+}
+html body .harvey {
+  background-color: green;
+}
+html body .harvey::after {
+  background-image: url(images/hd.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 1;
+}
+html body .harvey::before {
+  border-top: 100px solid green;
+}

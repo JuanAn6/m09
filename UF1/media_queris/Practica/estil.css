@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'AvengersFuente';
+  src: url('avengersfont.ttf') format('truetype');
+}
+html body {
+  font-family: AvengersFuente;
+  font-size: 2em;
+  color: blue;
+  text-shadow: -1px -1px 5px yellow, 1px -1px 5px yellow, -1px 1px 5px yellow, 1px 1px 5px yellow;
+  background-image: url("avengers_bg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+html body h1 {
+  margin: 20px;
+  font-size: 3em;
+}
+html body section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0px auto;
+  width: 75%;
+}
+html body section article {
+  background-color: black;
+  display: flex;
+  position: relative;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 5px #f2ff00;
+  -moz-box-shadow: 0px 0px 5px 5px #f2ff00;
+  box-shadow: 0px 0px 5px 5px #f2ff00;
+  aspect-ratio: 9/14;
+  overflow: hidden;
+}
+html body section article i {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  transform: translateX(50%);
+  font-size: 3em;
+}
+html body section article p {
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  transform: translateX(50%);
+}
+html body section article img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+html body section article picture {
+  margin: 0px auto;
+  z-index: 0;
+}
+@media screen and (max-width: 1200px) {
+  html body section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 75%;
+    margin: 0px auto;
+  }
+  html body section article {
+    width: auto;
+    aspect-ratio: 20/10;
+  }
+  html body section article i {
+    bottom: 60%;
+    left: 40%;
+    transform: translateX(50%);
+    transform: translateY(20%);
+    font-size: 1.5em;
+  }
+  html body section article p {
+    bottom: 20px;
+    right: 70%;
+    transform: translateX(50%);
+  }
+  html body section article picture {
+    margin-left: 70%;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 650px) {
+  html body {
+    font-size: 1em;
+    min-width: 300px;
+  }
+  html body section {
+    grid-template-columns: 1fr;
+  }
+  html body section article {
+    aspect-ratio: 21/7;
+    max-width: 100%;
+  }
+  html body section article i {
+    position: absolute;
+    bottom: 50%;
+    left: 10px;
+    transform: translateY(50%);
+    font-size: 3em;
+    z-index: 0;
+  }
+  html body section article p {
+    font-size: 1.5em;
+    bottom: 50%;
+    right: 10px;
+    transform: translateY(50%);
+    z-index: 0;
+  }
+  html body section article picture {
+    margin: 0px auto;
+    z-index: 1;
+    width: 65%;
+  }
+}

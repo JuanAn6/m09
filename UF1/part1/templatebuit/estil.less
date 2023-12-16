@@ -1,0 +1,60 @@
+@color_primari: rgb(162, 237, 199);
+html {
+    height:100%;
+    background-color: @color_primari;
+    //background-image: url(img/fons.jpg);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-position: 50% 0%;
+    
+    h1{
+        font-weight: bold;
+        margin-bottom: 20px;
+        background-color: rgb(117, 174, 174);
+        padding:10px;
+        margin:10px;
+        border-radius: 5px;
+    }
+    body{
+        color:black;
+        line-height: 20px;
+        padding: 20px;
+    }
+    div{
+        background-color: red;
+
+    }
+    p{
+        background-color: rgb(117, 174, 174);
+        padding:10px;
+        margin:10px;
+        border-radius: 5px;
+    }
+    section.columnes{
+        display:flex;
+
+        div{
+            
+            width: 50% ;//calc(50% -40px);
+            padding:10px;
+            margin:10px;
+            //box-sizing: border-box; ajustar com el display flex;
+
+
+            border-radius: 5px;
+            border:5px black;
+            border-style:outset;
+
+            outline: 5px solid red;
+
+        }
+    }
+    .triangle{
+        width: 0px;
+        height: 0px;
+        border: 50px solid transparent;
+        border-bottom-color: aquamarine;
+        background-color: transparent;
+    }
+}

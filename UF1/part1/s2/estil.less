@@ -1,0 +1,58 @@
+
+
+
+
+
+html#mila {
+    align-items: center;
+
+    @alsada_bandera: 60px;
+    @amplada_bandera: @alsada_bandera *2;
+    @alsada_estrella: @alsada_bandera * 0.5;
+    @border: @alsada_bandera / 10 ;
+    @padding: @alsada_bandera2px;
+
+
+    .north_korea_flag{
+        position:relative;
+        width: @amplada_bandera;
+        height:  @alsada_bandera;
+        background-color: white;
+        border: @border solid blue;
+        border-left-width:0px;
+        border-right-width:0px;
+        padding-top: @padding;
+        padding-bottom: @padding;
+        margin: 10px auto;
+    
+        &:before{
+            content:"";
+            display: block;
+            position: relative;
+            width: 100%;
+            height: @alsada_bandera;
+            background-color: red;
+            border-left-width:0px;
+            border-right-width:0px;
+        }
+        &:after{
+            content:"★";
+            font-size: 25;
+            text-align: center;
+            color: red;
+            display: block;
+            width: @alsada_estrella;
+            height: @alsada_estrella;
+            background-color: white;
+            position: relative;
+            border-radius: 50%;
+            top: (@alsada_estrella - @alsada_bandera) *0.5 + @padding;
+            line-height: @alsada_estrella;
+            left: 10;
+            //margin: 0px auto;
+        }   
+    }
+
+
+    
+}

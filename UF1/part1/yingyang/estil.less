@@ -1,0 +1,44 @@
+
+html#mila {
+    align-items: center;
+
+    @mesura: 500px;
+    @border: @mesura*0.02;
+    @borderpetit: (@mesura/2)*0.4;
+
+    .yingyang{
+        position:relative;
+        display: flex;
+        width: @mesura;
+        height: @mesura;
+        border: @border solid black;
+        border-radius: 50%;
+        background: linear-gradient(black 50%, white 50%) ;
+        margin: 0px auto;
+        margin-top: 1%;
+
+        &:before,&:after {
+            display:block;
+            position:relative;
+            content:"";
+            border-radius: 50%;
+            height: 10%;
+            width: 10%;
+            top: 25%;
+        
+        }
+        &:after{
+            background-color: white;
+            border: @borderpetit  solid black;
+            left: 0;  
+        }
+        &:before{
+            background-color: black;
+            border: @borderpetit solid white;
+            right: 0;
+        }
+
+
+    }
+    
+}

@@ -1,0 +1,124 @@
+html body {
+  display: grid;
+  background-color: #c6c6c6;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+  height: 100vh;
+}
+html body header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+  align-items: center;
+  padding: 20px;
+}
+html body header #menuHandler {
+  display: none;
+}
+html body nav {
+  grid-area: nav;
+}
+html body nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+html body nav ul li {
+  text-align: center;
+  padding: 10px;
+  flex: 1;
+  border: 1px solid black;
+}
+html body main {
+  grid-area: main;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  display: flex;
+  background-color: red;
+  max-width: 1500px;
+  height: auto;
+  justify-content: center;
+}
+html body main section {
+  box-sizing: border-box;
+  padding: 40px;
+}
+html body main #contents {
+  background-color: lightblue;
+  flex-grow: 3;
+  order: 0;
+}
+html body main #rightc {
+  background-color: violet;
+  flex-grow: 0;
+  order: 1;
+}
+html body main #rightc img {
+  width: 100%;
+}
+html body main #leftc {
+  background-color: orange;
+  flex-grow: 2;
+  order: 2;
+}
+html body footer {
+  grid-area: footer;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+@media screen and (max-width: 900px) {
+  html body main {
+    flex-wrap: wrap;
+  }
+  html body main #contents {
+    width: 100%;
+    order: 3;
+  }
+  html body main #rightc {
+    width: 50%;
+    height: auto;
+    order: 1;
+  }
+  html body main #leftc {
+    width: 50%;
+    height: auto;
+    flex-grow: unset;
+    order: 2;
+  }
+}
+@media screen and (max-width: 600px) {
+  html body header #menuHandler {
+    display: block;
+  }
+  html body nav ul {
+    background-color: lightpink;
+    flex-direction: column;
+  }
+  html body .hidden_menu {
+    display: none;
+  }
+  html body main {
+    flex-wrap: wrap;
+  }
+  html body main #contents {
+    width: 100%;
+    order: 0;
+  }
+  html body main #rightc {
+    width: 100%;
+    height: auto;
+    order: 1;
+  }
+  html body main #leftc {
+    width: 100%;
+    height: auto;
+    flex-grow: unset;
+    order: 2;
+  }
+}

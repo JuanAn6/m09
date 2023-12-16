@@ -1,0 +1,40 @@
+html#mila {
+  align-items: center;
+}
+html#mila .north_korea_flag {
+  position: relative;
+  width: 120px;
+  height: 60px;
+  background-color: white;
+  border: 60px / 10 solid blue;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin: 10px auto;
+}
+html#mila .north_korea_flag:before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: red;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+html#mila .north_korea_flag:after {
+  content: "★";
+  font-size: 25;
+  text-align: center;
+  color: red;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 50%;
+  top: -13px;
+  line-height: 30px;
+  left: 10;
+}

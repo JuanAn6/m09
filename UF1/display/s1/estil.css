@@ -1,0 +1,25 @@
+html {
+  height: 100%;
+}
+html body {
+  width: 100%;
+  background-color: black;
+}
+html body div {
+  display: block;
+  margin: 0px auto;
+  margin-top: 10%;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  transition-duration: 500ms;
+}
+html body div:hover {
+  width: 100px;
+  height: 100px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  transition-duration: 500ms;
+}

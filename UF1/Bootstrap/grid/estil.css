@@ -1,0 +1,98 @@
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+}
+html body {
+  display: grid;
+  background-color: #b0b0b0;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header header header header header" "nav nav nav nav nav" "aside main main main main" "footer footer footer footer footer";
+  min-height: calc(100vh - 1px);
+  height: 100%;
+}
+html body header {
+  background-color: #b87b0a;
+  padding: 10px;
+  grid-area: header;
+  position: relative;
+}
+html body header .flags {
+  position: absolute;
+  display: flex;
+  top: 25px;
+  right: 20px;
+}
+html body header .flags li {
+  padding: 10px;
+}
+html body header .flags li img {
+  width: 20px;
+  height: auto;
+}
+html body nav {
+  grid-area: nav;
+  background-color: orange;
+}
+html body nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+html body nav ul li {
+  font-size: large;
+  display: block;
+  padding: 15px;
+}
+html body aside {
+  grid-area: aside;
+}
+html body aside,
+html body main {
+  padding: 25px;
+  line-height: 15px;
+}
+html body main {
+  grid-area: main;
+}
+html body main h1 {
+  color: #966100;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+html body main section {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+html body main section article {
+  border-radius: 10px;
+  flex: 30%;
+  background-color: #ff8c00;
+  padding: 10px;
+  display: flex;
+  box-sizing: border-box;
+}
+html body main section article div {
+  padding: 10px;
+}
+html body main section article div h3 {
+  font-weight: bold;
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+html body footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  background-color: orange;
+  padding: 10px;
+}
+html body footer ul li {
+  display: block;
+  padding: 5px;
+}

@@ -1,0 +1,105 @@
+html{
+    body{
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid rgb(68, 58, 136);
+            height: 500px;
+            width: 700px;
+            position:relative;
+            
+
+            &:after,&:before{
+                display: block;
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 10%;
+                width: 20%;
+                transform: translateY(-50%);
+                background-image: url(./celtic_knot.jpg);
+                background-repeat: no-repeat;
+                height: 10%;
+                background-position: 50% 50%;
+                background-size: contain;
+            }
+            &:before{
+                
+
+                top: 50%;
+                left: 10%;
+                width: 20%;
+            }
+            .div1{
+                &:after{
+                    display: block;
+                    content:"";
+                    position:absolute;
+                    left: -40px;
+                    bottom:-20px;
+                    background-image: url(./celtic_corner.gif);
+                    background-repeat: no-repeat;
+                    width: 20%;
+                    height: 20%;
+                    background-position: 50% 50%;
+                    background-size: contain;
+                }
+
+                &:before{
+                    display: block;
+                    content:"";
+                    position:absolute;
+                    right: -40px;
+                    top: -20px;
+                    background-image: url(./celtic_corner.gif);
+                    background-repeat: no-repeat;
+                    width: 20%;
+                    height: 20%;
+                    background-position: 50% 50%;
+                    background-size: contain;
+                    transform: rotateZ(180deg);
+                }
+
+            }
+            
+            .div2{
+                &:after{
+                    display: block;
+                    content:"";
+                    position:absolute;
+                    left: -40px;
+                    top:-20px;
+                    background-image: url(./celtic_corner.gif);
+                    background-repeat: no-repeat;
+                    width: 20%;
+                    height: 20%;
+                    background-position: 50% 50%;
+                    background-size: contain;
+                    transform: rotateZ(90deg);
+                }
+
+                &:before{
+                    display: block;
+                    content:"";
+                    position:absolute;
+                    right: -40px;
+                    bottom: -20px;
+                    background-image: url(./celtic_corner.gif);
+                    background-repeat: no-repeat;
+                    width: 20%;
+                    height: 20%;
+                    background-position: 50% 50%;
+                    background-size: contain;
+                    transform: rotateZ(270deg);
+                }
+            }
+            
+        }
+
+        padding: 10%;
+        display: flex;
+        justify-content: center;
+    }
+}

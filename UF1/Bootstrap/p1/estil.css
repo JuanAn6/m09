@@ -1,0 +1,9 @@
+html body {
+  background-color: lightgrey;
+}
+html body header {
+  background-color: lightgreen;
+}
+html body main div {
+  background-color: azure;
+}
