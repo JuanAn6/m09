@@ -16,6 +16,9 @@
 #practica body .light-gray {
   background-color: lightgray;
 }
+#practica body .blanco {
+  color: white;
+}
 #practica body .t-gray {
   color: gray;
 }
@@ -27,4 +30,17 @@
 }
 #practica body .border-orange {
   border-color: orange;
+}
+#practica body .negrita {
+  font-weight: 900;
+}
+#practica body footer {
+  background-color: gray;
+  color: white;
+}
+#practica body .skyline {
+  background-image: url('imgs/skyline.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 200px;
 }
