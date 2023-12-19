@@ -6,3 +6,25 @@
 #practica body .red {
   background-color: red;
 }
+#practica body .circle {
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+#practica body .light-gray {
+  background-color: lightgray;
+}
+#practica body .t-gray {
+  color: gray;
+}
+#practica body .orange {
+  color: orange;
+}
+#practica body img {
+  width: 100%;
+}
+#practica body .border-orange {
+  border-color: orange;
+}
