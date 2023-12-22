@@ -40,11 +40,51 @@
             background-color: gray;
             color: white;
         }
+        .texto1-2em{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .texto2em{
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .icon-size-2{
+            font-size: 2em;
+        }
+        
         .skyline{
             background-image: url('./imgs/skyline.jpg');
             background-position: 50% 50%;
             background-size: cover;
             height: 200px;
         }
+        .blue{
+            color:rgb(53, 134, 255);
+        }
+
+        //hover imgs
+        .image-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(221, 143, 42, 0.5);
+            color: #fff; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 400ms ease;
+        }
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+
     }
 }
