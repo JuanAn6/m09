@@ -54,6 +54,7 @@
   background-position: 50% 50%;
   background-size: cover;
   height: 200px;
+  overflow: hidden;
 }
 #practica body .blue {
   color: #3586ff;
