@@ -35,58 +35,52 @@
 								<a class="nav-link white" href="#">Featires</a>
 							</li>
 						</ul>
-						<a class="navbar-brand white texto2em text-center " href="#"><img src="./imgs/logo.png"></span></a>
+						<a class="navbar-brand white texto2em text-center " href="#"><img class="img-logo-custom" src="./imgs/logo.png"></span></a>
 						<form class="d-flex ol-3" role="search">
-							<div class="d-flex form-control  col-12 white backgraund-primary align-items-center ">
-								<input class="form-control-plaintext   text-white backgraund-primary" type="search" placeholder="Search games & products.. " aria-label="Search">
+							<div class="d-flex col-12 white backgraund-primary align-items-center justify-content-between p-2 rounded">
+								<input class=" text-white backgraund-primary flex-grow-1 input-custom" type="search" placeholder="Search games & products.. " aria-label="Search">
 								<i class="fa-solid fa-magnifying-glass"></i>
 							</div>
-							<button class="btn light-blue" type="submit"><i class="fa-solid fa-bag-shopping"></i></button>
+							<button class="btn btn-shop-custom m-2 p-3" type="submit"></button>
 						</form>
 					</div>
 					
 				</div>
 			  </nav>	
 		</header>
-		<div id="carouselExampleCaptions" class="carousel slide">
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			</div>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="https://picsum.photos/1920/800?id=1" class="d-block w-100 object-fit-cover " alt="...">
-					<div class="carousel-caption d-none d-md-block">
-						<h5 class="orange texto2em">First slide label</h5>
-						<p>Some representative placeholder content for the first slide.</p>
-					</div>
-				</div>
-			  	<div class="carousel-item">
-					<img src="https://picsum.photos/1920/800?id=2" class="d-block w-100" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-						<h5 class="orange texto2em">Second slide label</h5>
-						<p>Some representative placeholder content for the second slide.</p>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img src="https://picsum.photos/1920/800?id=3" class="d-block w-100" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-						<h5 class="orange texto2em">Third slide label</h5>
-						<p>Some representative placeholder content for the third slide.</p>
-					</div>
-				</div>
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
-		</div>	
 		<main class="container">
+			<section class="row ">
+				<div class="col col-5 d-flex flex-column justify-content-evenly ">
+					<span>VIRTUAL HEDSETS</span>
+					<h1 class="title-custom">Experience a new dimension of reallity</h1>
+					<span class="icon-custom">
+					</span><span class="subtitle-text-custom">Step into the future with our virtual hedsets, come to life right before you eyes</span>
+					<div class="d-flex ">
+						<button class="btn-visit-store-custom rounded btn p-3 m-4">Visit Store</button>
+						<button class="btn-explore-custom rounded btn p-3 m-4">Explore</button>
+					</div>
+				</div>
+				<div class="col col-7 ">
+					<img class="img-div-custom object-fit-cover " src="./imgs/jhonn.png">
+				</div>
+				<div class="col col-12 d-flex justify-content-between  ">
+					<div class="d-flex flex-column ">
+						<span>Follow us</span>
+						<div>
+							iconos redes sociales
+						</div>
+					</div>
+					<div>
+						iconos
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+
+
+		<!-- <main class="container">
 			<div class="row flex-column align-items-center ">
 				<div class="col align-items-center ">
 					<h2 class="text-center negrita">Our Services</h2>
@@ -402,7 +396,7 @@
 					<i class="fa-brands fa-github"></i>
 				</div>
 			</div>
-		</footer>
+		</footer> -->
 	</div>
 </body>
 </html>

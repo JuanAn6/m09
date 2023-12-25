@@ -1,94 +1,66 @@
 #practica body {
   background-color: #320336;
   color: #fff;
-}
-#practica body .red {
-  background-color: red;
+  background-image: url('imgs/back1.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
 }
 #practica body .backgraund-primary {
   background-color: #320336;
 }
-#practica body .circle {
-  display: block;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-}
 #practica body .white {
-  color: white;
-}
-#practica body .white ::placeholder {
-  color: #e6e6e6;
-}
-#practica body .light-gray {
-  background-color: lightgray;
-}
-#practica body .light-blue {
-  color: lightblue;
-}
-#practica body .blanco {
-  color: white;
-}
-#practica body .t-gray {
-  color: gray;
-}
-#practica body .orange {
-  color: orange;
-}
-#practica body img {
-  width: 100%;
-}
-#practica body .border-orange {
-  border-color: orange;
-}
-#practica body .negrita {
-  font-weight: 900;
-}
-#practica body footer {
-  background-color: gray;
-  color: white;
-}
-#practica body .texto1-2em {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-#practica body .texto2em {
-  font-size: 2em;
-  font-weight: bold;
-}
-#practica body .icon-size-2 {
-  font-size: 2em;
-}
-#practica body .skyline {
-  background-image: url('imgs/skyline.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 200px;
-  overflow: hidden;
-}
-#practica body .blue {
-  color: #3586ff;
-}
-#practica body .image-container {
-  position: relative;
-  overflow: hidden;
-}
-#practica body .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(221, 143, 42, 0.5);
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 400ms ease;
 }
-#practica body .image-container:hover .overlay {
-  opacity: 1;
+#practica body .img-logo-custom {
+  width: 140px;
+}
+#practica body .btn-shop-custom {
+  background-image: url('imgs/shop_icon.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+#practica body .input-custom {
+  border: none;
+  outline: none;
+}
+#practica body .title-custom {
+  font-size: 70px;
+}
+#practica body .img-div-custom {
+  border-bottom: 2px solid #5b00af;
+  border-image: linear-gradient(to right, #ffffff00, #5b00af);
+  /* Define el gradiente */
+  border-image-slice: 1;
+  width: 850px;
+}
+#practica body .subtitle-text-custom {
+  display: block;
+  max-width: 400px;
+}
+#practica body .btn-visit-store-custom {
+  background-color: aqua;
+  outline: none;
+  transition: 400ms;
+}
+#practica body .btn-visit-store-custom:hover {
+  -webkit-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  -moz-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+#practica body .btn-explore-custom {
+  color: white;
+  border: 1px solid white;
+  transition: 400ms;
+}
+#practica body .btn-explore-custom:hover {
+  -webkit-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  -moz-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  background-color: aqua;
+  color: black;
 }
