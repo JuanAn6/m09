@@ -1,0 +1,408 @@
+<!DOCTYPE html >
+
+<html id="practica" class="min-vh-100 ">
+<head>
+	<title>title</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="estil.css" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+	integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+	<script src="https://kit.fontawesome.com/7a9a6b1d1c.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body class="min-vh-100">
+	<div class="d-flex flex-column min-vh-100">
+		<header class="container-fluid ">
+			<nav class="navbar navbar-expand-lg bg-transparent ">
+				<div class="container">
+					<button class="navbar-toggler white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon white"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-between " id="navbarSupportedContent">
+						<ul class="navbar-nav mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active white" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link white" href="#">Catalog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link white" href="#">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link white" href="#">Featires</a>
+							</li>
+						</ul>
+						<a class="navbar-brand white texto2em text-center " href="#"><span class="light-blue">Holo</span>Goze<span class="light-blue">.</span></a>
+						<form class="d-flex ol-3" role="search">
+							<div class="d-flex form-control  col-12 white backgraund-primary align-items-center ">
+								<input class="form-control-plaintext   text-white backgraund-primary" type="search" placeholder="Search games & products.. " aria-label="Search">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</div>
+							<button class="btn light-blue" type="submit"><i class="fa-solid fa-bag-shopping"></i></button>
+						</form>
+					</div>
+					
+				</div>
+			  </nav>	
+		</header>
+		<div id="carouselExampleCaptions" class="carousel slide">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="https://picsum.photos/1920/800?id=1" class="d-block w-100 object-fit-cover " alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5 class="orange texto2em">First slide label</h5>
+						<p>Some representative placeholder content for the first slide.</p>
+					</div>
+				</div>
+			  	<div class="carousel-item">
+					<img src="https://picsum.photos/1920/800?id=2" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5 class="orange texto2em">Second slide label</h5>
+						<p>Some representative placeholder content for the second slide.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="https://picsum.photos/1920/800?id=3" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5 class="orange texto2em">Third slide label</h5>
+						<p>Some representative placeholder content for the third slide.</p>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>	
+		<main class="container">
+			<div class="row flex-column align-items-center ">
+				<div class="col align-items-center ">
+					<h2 class="text-center negrita">Our Services</h2>
+				</div>
+				<div class="col-1 border border-2 mb-3 border-warning "></div>
+			</div>
+			<div class="row justify-content-center ">
+				<div class="col col-10 text-center">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, facere magni explicabo beatae tempore veritatis obcaecati sint deleniti minima iusto? Cupiditate quam, harum reprehenderit iure cumque suscipit aliquam. Modi, tempora.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro quaerat sed eaque optio </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-12 col-lg-6 text-center">
+					<div class="row mt-3">
+						<div class="col col-3">
+							Sales
+						</div>
+						<div class="col col-9">
+							<div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+								<div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 50%"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="col col-3">
+							Top route
+						</div>
+						<div class="col col-9">
+							<div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+								<div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" style="width: 100%"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="col col-3">
+							Sumas
+						</div>
+						<div class="col col-9">
+							<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+								<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-12 col-lg-6 text-center">
+					<div class="row mt-3">
+						<div class="col col-3">
+							Sales
+						</div>
+						<div class="col col-9">
+							<div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+								<div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 50%"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="col col-3">
+							Top route
+						</div>
+						<div class="col col-9">
+							<div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+								<div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" style="width: 100%"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="col col-3">
+							Resta
+						</div>
+						<div class="col col-9">
+							<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+								<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="container-fluid mt-5">
+			<div class="row light-gray text-center ">
+				<div class="col col-12 col-lg-4 d-flex align-items-center flex-column flex-sm-row flex-lg-column  align-items-center p-4">
+					<div class="col col-2 d-flex flex-column justify-content-center align-items-center m-4">
+						<div class="circle shadow orange d-flex flex-column justify-content-center  align-items-center">
+							<i class="fa-solid fa-cable-car fa-lg"></i>
+						</div>
+					</div>
+					<div class="col col-8 t-gray d-flex flex-column justify-content-center align-items-center">
+						<b>akñlsjdfñsalkdj</b>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum corporis eos </p>
+					</div>
+				</div>
+				<div class="col col-12 col-lg-4 d-flex align-items-center flex-column flex-sm-row flex-lg-column  align-items-center p-4">
+					<div class="col col-2 d-flex flex-column justify-content-center align-items-center m-4">
+						<div class="circle shadow orange d-flex flex-column justify-content-center  align-items-center">
+							<i class="fa-solid fa-mountain-sun fa-lg "></i>
+						</div>
+					</div>
+					<div class="col col-8 t-gray d-flex flex-column justify-content-center align-items-center">
+						<b>akñlsjdfñsalkdj</b>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum corporis eos </p>
+					</div>
+				</div>
+				<div class="col col-12 col-lg-4 d-flex align-items-center flex-column flex-sm-row flex-lg-column  align-items-center p-4">
+					<div class="col col-2 d-flex flex-column justify-content-center align-items-center m-4">
+						<div class="circle shadow orange d-flex flex-column justify-content-center  align-items-center">
+							<i class="fa-solid fa-plane fa-lg"></i>
+						</div>
+					</div>
+					<div class="col col-8 t-gray d-flex flex-column justify-content-center align-items-center">
+						<b>akñlsjdfñsalkdj</b>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum corporis eos </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row flex-column align-items-center mt-2">
+				<div class="col align-items-center ">
+					<h2 class="text-center negrita">Our Recomendations</h2>
+				</div>
+				<div class="col-1 border border-2 mb-3 border-warning "></div>
+			</div>
+			<div class="row text-center mb-3">
+				<div class="col">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit unde voluptate ducimus nisi, consectetur veniam ut iste maxime provident illum quo nulla tenetur porro dolor mollitia neque. Repellendus, odit perferendis.
+					<button class="btn btn-primary">See all recomendations!!!</button>
+				</div>
+			</div>
+			<div class="row row-cols-lg-3 row-cols-1  p-0 gx-1 gy-1">
+				<div class="col bg-image hover-overlay">
+					<div class="image-container rounded">
+						<img src="https://picsum.photos/600/400?id=20" class="object-fit-cover img-fluid" alt="Imagen">
+						<div class="overlay">
+							<h1 class="blue">Title</h1>
+							<p>minus repellendus hic consequuntur soluta.</p>
+							<button class="btn btn-primary "><i class="fa-solid fa-magnifying-glass"></i>View</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="image-container rounded">
+						<img src="https://picsum.photos/600/400?id=21" class="object-fit-cover img-fluid" alt="Imagen">
+						<div class="overlay">
+							<h1 class="blue">Title</h1>
+							<p>minus repellendus hic consequuntur soluta.</p>
+							<button class="btn btn-primary "><i class="fa-solid fa-magnifying-glass"></i>View</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="image-container rounded">
+						<img src="https://picsum.photos/600/400?id=22" class="object-fit-cover img-fluid" alt="Imagen">
+						<div class="overlay">
+							<h1 class="blue">Title</h1>
+							<p>Texto sobre la imagen</p>
+							<button class="btn btn-primary "><i class="fa-solid fa-magnifying-glass"></i>View</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="image-container rounded">
+						<img src="https://picsum.photos/600/400?id=23" class="object-fit-cover img-fluid" alt="Imagen">
+						<div class="overlay">
+							<h1 class="blue">Title</h1>
+							<p>Texto sobre la imagen</p>
+							<button class="btn btn-primary "><i class="fa-solid fa-magnifying-glass"></i>View</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="image-container rounded">
+						<img src="https://picsum.photos/600/400?id=24" class="object-fit-cover img-fluid" alt="Imagen">
+						<div class="overlay">
+							<h1 class="blue">Title</h1>
+							<p>Texto sobre la imagen</p>
+							<button class="btn btn-primary "><i class="fa-solid fa-magnifying-glass"></i>View</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="image-container rounded">
+						<img src="https://picsum.photos/600/400?id=25" class="object-fit-cover img-fluid" alt="Imagen">
+						<div class="overlay">
+							<h1 class="blue">Title</h1>
+							<p>Texto sobre la imagen</p>
+							<button class="btn btn-primary "><i class="fa-solid fa-magnifying-glass"></i>View</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container ">
+			<div class="row flex-column align-items-center mt-2">
+				<div class="col align-items-center ">
+					<h3 class="text-center negrita">Our Clients Say</h3>
+				</div>
+				<div class="col-1 border border-2 mb-3 border-warning "></div>
+			</div>
+		</div>
+		<div class="container-fluid skyline">
+			<div class="row flex-column text-center blanco d-flex justify-content-between align-items-center ">
+				<div class="col col-lg-6 mt-4">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus architecto numquam maxime placeat vero nesciunt, suscipit minus laudantium tenetur necessitatibus sed id natus ipsum doloribus fugit, culpa libero atque error!
+				</div>
+				<div class="col orange negrita align-items-end align">
+					Jaime Herrera
+				</div>
+			</div>
+		</div>
+		<div class="container mt-4">
+			<div class="row  flex-lg-row-reverse">			
+				<div class="col col-12 col-lg-6">
+					<h3 class="negrita ">Questions & ansewers: </h3>
+					<div class="row">
+						<div class="col">
+							<div class="accordion" id="accordionExample">
+								<div class="accordion-item">
+								  <h2 class="accordion-header" id="headingOne">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									  Accordion Item #1
+									</button>
+								  </h2>
+								  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+									  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+									</div>
+								  </div>
+								</div>
+								<div class="accordion-item">
+								  <h2 class="accordion-header" id="headingTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									  Accordion Item #2
+									</button>
+								  </h2>
+								  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+									  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+									</div>
+								  </div>
+								</div>
+								<div class="accordion-item">
+								  <h2 class="accordion-header" id="headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									  Accordion Item #3
+									</button>
+								  </h2>
+								  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+									  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+									</div>
+								  </div>
+								</div>
+							  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-12 col-lg-6">
+					<h3 class="negrita ">Ter Stegen Facts: </h3>
+					<div class="row">
+						<div class="col d-flex ">
+							<div class="m-3"><i class="fa-regular fa-face-smile icon-size-2"></i></div>
+							<div>
+								<p class="orange texto1-2em">1200+ Happy clients</p>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col d-flex">
+							<div class="m-3"><i class="fa-regular fa-square-check icon-size-2"></i></i></div>
+							<div>
+								<p class="orange texto1-2em">600+ Tour offered</p>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col d-flex">
+							<div class="m-3"><i class="fa-solid fa-trophy icon-size-2"></i></div>
+							<div>
+								<p class="orange texto1-2em">33 >Awards</p>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<a href="#" class="text-decoration-none ">Read more?</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col d-flex flex-column align-items-center ">
+					<h3 class="negrita text-center">Want to have fun?</h3>
+					<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum assumenda nobis neque aliquam, modi illo animi incidunt tempore fugit ad delectus tempora architecto ea, consequatur similique repellendus eligendi, inventore ratione.</p>
+					<button class="btn btn-primary col-2">Contact Us</button>
+				</div>
+			</div>
+		</div>
+		<footer class="container-fluid mt-4">
+			<div class="row text-center p-4">
+				<div class="col">
+					Copiraygt 2050 Risija Enterprise
+				</div>
+				<div class="col">
+					<i class="fa-brands fa-facebook"></i>
+					<i class="fa-brands fa-twitter"></i>
+					<a href="https://www.linkedin.com/in/juan-antonio-garc%C3%ADa-jim%C3%A9nez-651078236/"><i class="fa-brands fa-linkedin"></i></a>
+					<i class="fa-brands fa-github"></i>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

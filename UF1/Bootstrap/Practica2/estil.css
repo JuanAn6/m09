@@ -1,0 +1,94 @@
+#practica body {
+  background-color: #320336;
+  color: #fff;
+}
+#practica body .red {
+  background-color: red;
+}
+#practica body .backgraund-primary {
+  background-color: #320336;
+}
+#practica body .circle {
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+#practica body .white {
+  color: white;
+}
+#practica body .white ::placeholder {
+  color: #e6e6e6;
+}
+#practica body .light-gray {
+  background-color: lightgray;
+}
+#practica body .light-blue {
+  color: lightblue;
+}
+#practica body .blanco {
+  color: white;
+}
+#practica body .t-gray {
+  color: gray;
+}
+#practica body .orange {
+  color: orange;
+}
+#practica body img {
+  width: 100%;
+}
+#practica body .border-orange {
+  border-color: orange;
+}
+#practica body .negrita {
+  font-weight: 900;
+}
+#practica body footer {
+  background-color: gray;
+  color: white;
+}
+#practica body .texto1-2em {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#practica body .texto2em {
+  font-size: 2em;
+  font-weight: bold;
+}
+#practica body .icon-size-2 {
+  font-size: 2em;
+}
+#practica body .skyline {
+  background-image: url('imgs/skyline.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 200px;
+  overflow: hidden;
+}
+#practica body .blue {
+  color: #3586ff;
+}
+#practica body .image-container {
+  position: relative;
+  overflow: hidden;
+}
+#practica body .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(221, 143, 42, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+#practica body .image-container:hover .overlay {
+  opacity: 1;
+}
