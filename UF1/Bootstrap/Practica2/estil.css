@@ -15,11 +15,118 @@
 #practica body .img-logo-custom {
   width: 140px;
 }
+#practica body .under-line-custom {
+  border-bottom: 2px solid #5b00af;
+  border-image: linear-gradient(90deg, transparent 0%, #5b00af 52%, rgba(204, 72, 224, 0) 100%);
+  border-image-slice: 1;
+  max-width: fit-content;
+}
+#practica body .search-icon-custom {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('imgs/search_icon.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+#practica body .right-arrow-icon-custom {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('imgs/right_arrow_icon.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+#practica body .safari-icon-custom {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('imgs/safari_icon.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+#practica body .purple-star-icon-custom {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('imgs/purple_star_icon.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+#practica body .simulation-icon-custom {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('imgs/simulatio_icon.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+#practica body .school-icon-custom {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('imgs/school_icon.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
 #practica body .btn-shop-custom {
   background-image: url('imgs/shop_icon.png');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+#practica body .twitter-icon-custom {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('imgs/twitter_icon.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+#practica body .instagram-icon-custom {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('imgs/instagram_icon.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+#practica body .discord-icon-custom {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('imgs/discord_icon.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+#practica body .facebook-icon-custom {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('imgs/facebook_icon.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+#practica body .btn-custom:active {
+  background-color: #fff;
+}
+#practica body .btn-custom:hover {
+  -webkit-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  -moz-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
 }
 #practica body .input-custom {
   border: none;
@@ -30,8 +137,7 @@
 }
 #practica body .img-div-custom {
   border-bottom: 2px solid #5b00af;
-  border-image: linear-gradient(to right, #ffffff00, #5b00af);
-  /* Define el gradiente */
+  border-image: linear-gradient(to right, rgba(255, 255, 255, 0), #5b00af);
   border-image-slice: 1;
   width: 850px;
 }
