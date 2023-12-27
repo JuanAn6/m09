@@ -149,33 +149,33 @@
   border-bottom: 2px solid #5b00af;
   border-image: linear-gradient(to right, rgba(255, 255, 255, 0), #5b00af);
   border-image-slice: 1;
-  width: 850px;
+  width: 650px;
 }
 #practica body .obj1-custom {
   color: #8ce2ff;
   position: absolute;
-  top: 125px;
-  left: 165px;
+  top: 93px;
+  left: 215px;
 }
 #practica body .obj2-custom {
   color: #8ce2ff;
   position: absolute;
-  top: 270px;
-  left: 650px;
+  top: 205px;
+  left: 590px;
   text-wrap: nowrap;
 }
 #practica body .obj3-custom {
   color: white;
   position: absolute;
-  top: 175px;
-  left: -70px;
+  top: 130px;
+  left: 10px;
   text-wrap: nowrap;
 }
 #practica body .obj4-custom {
   color: white;
   position: absolute;
-  top: 235px;
-  left: 55px;
+  top: 177px;
+  left: 120px;
   text-wrap: nowrap;
 }
 #practica body .subtitle-text-custom {
@@ -222,4 +222,57 @@
 }
 #practica body .span-lens-custom {
   max-width: 250px;
+}
+#practica body .title3-custom {
+  font-size: 70px;
+  max-width: 600px;
+}
+#practica body .paragraf-custom {
+  max-width: 600px;
+}
+#practica body .btn-custom-2 {
+  width: fit-content;
+  color: aqua;
+  background-color: #303041;
+}
+#practica body .btn-custom-2:hover {
+  -webkit-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  -moz-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+}
+#practica body .play-img-custom {
+  clip-path: polygon(25% 0, 100% 0, 100% 75%, 75% 100%, 25% 100%, 0 100%, 0 25%);
+  border: 2px solid #d400ff;
+}
+#practica body .twitt-card {
+  background-color: white;
+  width: fit-content;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+}
+#practica body .twitt-card .inverted-text {
+  writing-mode: vertical-rl;
+  cursor: pointer;
+}
+#practica body .twitt-card .twitt-gray {
+  color: lightgray;
+}
+#practica body .twitt-card .twitt {
+  color: black;
+}
+#practica body .twitt-card .twitt-text {
+  font-size: 20px;
+}
+#practica body .twitt-card .twitt-likes {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+#practica body .twitt-card .img-circle-custom {
+  width: 50px;
+  border-radius: 50%;
+}
+#practica body .twitt-card footer img {
+  width: 25px;
+  cursor: pointer;
 }
