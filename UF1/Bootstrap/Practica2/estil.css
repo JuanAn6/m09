@@ -243,6 +243,49 @@
 #practica body .play-img-custom {
   clip-path: polygon(25% 0, 100% 0, 100% 75%, 75% 100%, 25% 100%, 0 100%, 0 25%);
   border: 2px solid #d400ff;
+  object-fit: contain;
+  width: 100%;
+}
+#practica body .div-likes-custom {
+  position: relative;
+  width: 150px;
+  height: 50px;
+}
+#practica body .div-likes-custom .img-likes-custom {
+  clip-path: polygon(25% 9%, 75% 9%, 100% 50%, 75% 91%, 25% 91%, 0% 50%);
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 50px;
+  height: 50px;
+  transition: transform 400ms;
+}
+#practica body .div-likes-custom .img-likes-custom:nth-child(1) {
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+}
+#practica body .div-likes-custom .img-likes-custom:nth-child(2) {
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+}
+#practica body .div-likes-custom .img-likes-custom:nth-child(3) {
+  position: absolute;
+  z-index: 3;
+  left: 40px;
+}
+#practica body .div-likes-custom .img-likes-custom:nth-child(4) {
+  position: absolute;
+  z-index: 4;
+  left: 60px;
+}
+#practica body .div-likes-custom .img-likes-custom:nth-child(5) {
+  position: absolute;
+  z-index: 5;
+  left: 80px;
+}
+#practica body .div-likes-custom .img-likes-custom:hover {
+  transform: translateY(-60%);
 }
 #practica body .twitt-card {
   background-color: white;

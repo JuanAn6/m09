@@ -259,8 +259,57 @@
         .play-img-custom{
             clip-path: polygon(25% 0, 100% 0, 100% 75%, 75% 100%, 25% 100%, 0 100%, 0 25%);
             border:2px solid rgb(212, 0, 255);
+            object-fit: contain;
+            width: 100%;
         }
 
+        .div-likes-custom {
+            position: relative;
+            width: 150px;
+            height: 50px;
+            .img-likes-custom {
+                clip-path: polygon(25% 9%, 75% 9%, 100% 50%, 75% 91%, 25% 91%, 0% 50%);
+                object-fit: cover;
+                object-position: 50% 50%;
+                width: 50px;
+                height: 50px;
+                //position: absolute; si ho poso aqui no funciona;
+                transition: transform 400ms;
+            
+                &:nth-child(1) { 
+                    position: absolute;
+                    z-index: 1; 
+                    left:0px;
+                }
+                &:nth-child(2) {
+                    position: absolute;
+                    z-index: 2; 
+                    left:20px;
+                }
+                &:nth-child(3) {
+                    position: absolute;
+                    z-index: 3;
+                    left:40px;
+                }
+                &:nth-child(4) {
+                    position: absolute;
+                    z-index: 4;
+                    left:60px;
+                }
+                &:nth-child(5) {
+                    position: absolute;
+                    z-index: 5;
+                    left:80px; 
+                }
+            
+                &:hover {
+                    transform: translateY(-60%);
+                }
+            }
+
+          }
+      
+          
         .twitt-card{
             background-color: white;
             width: fit-content;
