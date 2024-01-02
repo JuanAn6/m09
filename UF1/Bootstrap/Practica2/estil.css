@@ -430,3 +430,30 @@
   border-image: linear-gradient(90deg, transparent 0%, #5b00af 52%, rgba(204, 72, 224, 0) 100%);
   border-image-slice: 1;
 }
+#practica body .accordion-item {
+  color: white;
+  background-color: #303041;
+  border: white 2px solid;
+}
+#practica body .accordion-item button {
+  color: white;
+  background-color: #39343d;
+}
+#practica body .accordion-item button::after {
+  opacity: 0;
+}
+#practica body .accordion-item button::before {
+  position: absolute;
+  display: block;
+  content: ' ';
+  background-image: url('imgs/icons/up_arrow_icon.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  right: 15px;
+}
+#practica body .accordion-item .collapsed::before {
+  background-image: url('imgs/icons/down_arrow_icon.png');
+}

@@ -468,5 +468,35 @@
             border-image: linear-gradient(90deg, transparent 0%, rgb(91, 0, 175) 52%, rgba(204,72,224,0) 100%);
             border-image-slice: 1;
         }
+        .accordion-item{
+            color:white;
+            background-color: rgb(48, 48, 65);
+            button{
+                color: white;
+                background-color: rgb(57, 52, 61);
+                &::after{
+                    opacity: 0;
+                }
+                &::before{
+                    position: absolute;
+                    display: block;
+                    content:' ';
+                    background-image: url('./imgs/icons/up_arrow_icon.png');
+                    background-position: 50% 50%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 30px;
+                    height: 30px;
+                    right: 15px;
+                }
+                
+            }
+            .collapsed{
+                &::before{
+                    background-image: url('./imgs/icons/down_arrow_icon.png');
+                }
+            }
+            border:white 2px solid;
+        }
     }
 }
