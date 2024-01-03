@@ -17,14 +17,15 @@
   font-style: normal;
 }
 #practica body {
-  background-color: #320336;
+  background-color: #140418;
   color: #fff;
   font-family: 'Satoshi-Regular';
-  background: url('imgs/back1.png');
-  background-repeat: no-repeat;
+}
+#practica body .back1-custom {
+  background-image: url('imgs/back1.jpg');
   background-position: 50% 0;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: scroll;
 }
 #practica body h1 {
   font-family: 'Satoshi-Bold';
@@ -218,9 +219,9 @@
   background-color: #fff;
 }
 #practica body .btn-custom:hover {
-  -webkit-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-  -moz-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-  box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  -webkit-box-shadow: 0px 0px 56px 5px #3ddeed;
+  -moz-box-shadow: 0px 0px 56px 5px #3ddeed;
+  box-shadow: 0px 0px 56px 5px #3ddeed;
 }
 #practica body .input-custom {
   border: none;
@@ -269,9 +270,9 @@
   transition: 400ms;
 }
 #practica body .btn-visit-store-custom:hover {
-  -webkit-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-  -moz-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-  box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  -webkit-box-shadow: 0px 0px 56px 5px #3ddeed;
+  -moz-box-shadow: 0px 0px 56px 5px #3ddeed;
+  box-shadow: 0px 0px 56px 5px #3ddeed;
   background: transparent;
   border: 1px solid white;
   color: white;
@@ -282,9 +283,9 @@
   transition: 400ms;
 }
 #practica body .btn-explore-custom:hover {
-  -webkit-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-  -moz-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-  box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  -webkit-box-shadow: 0px 0px 56px 5px #3ddeed;
+  -moz-box-shadow: 0px 0px 56px 5px #3ddeed;
+  box-shadow: 0px 0px 56px 5px #3ddeed;
   background-color: aqua;
   color: black;
 }
@@ -315,25 +316,25 @@
 #practica body .btn-custom-2 {
   width: fit-content;
   color: aqua;
-  background-color: #303041;
+  background-color: #182627;
 }
 #practica body .btn-custom-2:hover {
-  -webkit-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-  -moz-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-  box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  -webkit-box-shadow: 0px 0px 56px 5px #3ddeed;
+  -moz-box-shadow: 0px 0px 56px 5px #3ddeed;
+  box-shadow: 0px 0px 56px 5px #3ddeed;
 }
 #practica body .btn-custom-3 {
   color: aqua;
-  background-color: #303041;
+  background-color: #182627;
 }
 #practica body .btn-custom-3:hover {
-  -webkit-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-  -moz-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-  box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  -webkit-box-shadow: 0px 0px 56px 5px #3ddeed;
+  -moz-box-shadow: 0px 0px 56px 5px #3ddeed;
+  box-shadow: 0px 0px 56px 5px #3ddeed;
 }
 #practica body .play-img-custom {
   clip-path: polygon(25% 0, 100% 0, 100% 75%, 75% 100%, 25% 100%, 0 100%, 0 25%);
-  border: 2px solid #d400ff;
+  border: 2px solid #bd00ff;
   object-fit: contain;
   width: 100%;
 }
@@ -418,7 +419,7 @@
   display: none;
 }
 #practica body .container-games-custom img {
-  border: 1px solid #d400ff;
+  border: 1px solid #bd00ff;
   clip-path: polygon(70% 0, 100% 30%, 100% 100%, 0 100%, 0 0);
 }
 #practica body .selected-game h2 {
@@ -450,23 +451,23 @@
   font-weight: bold;
 }
 #practica body .input-submit-custom:hover {
-  -webkit-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-  -moz-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-  box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  -webkit-box-shadow: 0px 0px 56px 5px #3ddeed;
+  -moz-box-shadow: 0px 0px 56px 5px #3ddeed;
+  box-shadow: 0px 0px 56px 5px #3ddeed;
 }
 #practica body .under-line-custom2 {
   border-bottom: 2px solid;
-  border-image: linear-gradient(90deg, transparent 0%, #5b00af 52%, rgba(204, 72, 224, 0) 100%);
+  border-image: linear-gradient(90deg, transparent 0%, #5b00af 52%, rgba(0, 0, 0, 0) 100%);
   border-image-slice: 1;
 }
 #practica body .accordion-item {
   color: white;
-  background-color: #2a2a30;
+  background-color: #182627;
   border: white 2px solid;
 }
 #practica body .accordion-item button {
   color: white;
-  background-color: #2a2a30;
+  background-color: #182627;
 }
 #practica body .accordion-item button::after {
   opacity: 0;
@@ -484,9 +485,9 @@
   right: 15px;
 }
 #practica body .accordion-item button:hover {
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(82, 157, 255, 0.767);
-  -moz-box-shadow: 0px 0px 10px 10px rgba(82, 157, 255, 0.767);
-  box-shadow: 0px 0px 10px 10px rgba(82, 157, 255, 0.767);
+  -webkit-box-shadow: 0px 0px 10px 10px #3ddeed;
+  -moz-box-shadow: 0px 0px 10px 10px #3ddeed;
+  box-shadow: 0px 0px 10px 10px #3ddeed;
 }
 #practica body .accordion-item .collapsed::before {
   background-image: url('imgs/icons/down_arrow_icon.png');
@@ -540,8 +541,8 @@
     background-size: cover;
   }
   #practica body .menu-icon-custom:hover {
-    -webkit-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-    -moz-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-    box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+    -webkit-box-shadow: 0px 0px 56px 5px #3ddeed;
+    -moz-box-shadow: 0px 0px 56px 5px #3ddeed;
+    box-shadow: 0px 0px 56px 5px #3ddeed;
   }
 }
