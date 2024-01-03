@@ -10,13 +10,13 @@ function f_main()
 function right()
 {
     console.log('right');
-    document.getElementById('content').scrollLeft += 300;
+    document.getElementById('content').scrollLeft += 350;
     selected_game(1);
 }
 function left()
 {
     console.log('left');
-    document.getElementById('content').scrollLeft -= 300;
+    document.getElementById('content').scrollLeft -= 350;
     selected_game(-1);
 }
 

@@ -180,6 +180,20 @@
   background-position: 6.5% 50%;
   background-size: cover;
 }
+#practica body .menu-icon-custom {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url('imgs/icones_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 94% 50%;
+  background-size: cover;
+}
+#practica body .menu-icon-custom:hover {
+  -webkit-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  -moz-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+  box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+}
 #practica body .btn-custom:active {
   background-color: #fff;
 }
@@ -456,4 +470,46 @@
 }
 #practica body .accordion-item .collapsed::before {
   background-image: url('imgs/icons/down_arrow_icon.png');
+}
+@media screen and (max-width: 1399px) {
+  #practica body .obj1-custom {
+    display: none;
+  }
+  #practica body .obj2-custom {
+    display: none;
+  }
+  #practica body .obj3-custom {
+    display: none;
+  }
+  #practica body .obj4-custom {
+    display: none;
+  }
+  #practica body .title2-custom {
+    font-size: 70px;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 990px) {
+  #practica body .twitt-card {
+    background-color: white;
+    width: 100%;
+    position: relative;
+  }
+  #practica body .play-img-custom {
+    clip-path: polygon(0 25%, 25% 0, 100% 0, 100% 100%, 0 100%);
+  }
+  #practica body .title3-custom {
+    font-size: 70px;
+    max-width: 100%;
+  }
+  #practica body .input-text-custom {
+    border-radius: 10px 10px 10px 10px ;
+  }
+  #practica body .input-submit-custom {
+    border-radius: 10px 10px 10px 10px ;
+  }
+  #practica body .img-div-custom {
+    object-position: 50% 50%;
+    width: 650px;
+  }
 }
