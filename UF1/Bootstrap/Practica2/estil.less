@@ -1,14 +1,48 @@
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('font/Satoshi/Satoshi-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('font/Satoshi/Satoshi-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('font/Satoshi/Satoshi-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #practica{
     body{
         background-color: rgb(50, 3, 54);
         color:#fff;
         
+        font-family: 'Satoshi-Regular';
 
         background:url('./imgs/back1.png');
         background-repeat: no-repeat;
         background-position: 50% 0;
         background-size: cover;
         background-attachment: scroll;
+
+        h1{
+            font-family: 'Satoshi-Bold';
+            font-size: 80px;
+        }
+        h2{
+            font-family: 'Satoshi-Bold';
+            font-size: 56px;
+        }
+
+        button{
+            font-family: 'Satoshi-Medium';
+            font-size: 18px;
+        }
 
         .backgraund-primary{
             background-color: rgb(50, 3, 54);
@@ -192,18 +226,7 @@
             
         }
         .menu-icon-custom{
-            display: block;
-            width: 50px;
-            height: 50px;
-            background-image: url('./imgs/icones_sprite.png');
-            background-repeat: no-repeat;
-            background-position: 94% 50%;
-            background-size: cover;
-            &:hover{
-                -webkit-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-                -moz-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-                box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
-            }
+            display: none;
         }
 
         .btn-custom{
@@ -219,9 +242,6 @@
         .input-custom{
             border:none;
             outline: none;
-        }
-        .title-custom{
-            font-size: 70px;
         }
 
         .img-div-custom{
@@ -296,7 +316,6 @@
             background-size: cover;
         }
         .title2-custom{
-            font-size: 70px;
             max-width: 700px;
         }
         .img-lens-custom{
@@ -309,7 +328,6 @@
 
 
         .title3-custom{
-            font-size: 70px;
             max-width: 600px;
         }
 
@@ -484,10 +502,10 @@
         }
         .accordion-item{
             color:white;
-            background-color: rgb(48, 48, 65);
+            background-color: rgb(42, 42, 48);
             button{
                 color: white;
-                background-color: rgb(57, 52, 61);
+                background-color: rgb(42, 42, 48);
                 &::after{
                     opacity: 0;
                 }
@@ -503,6 +521,11 @@
                     height: 30px;
                     right: 15px;
                 }
+                &:hover{
+                    -webkit-box-shadow: 0px 0px 10px 10px rgba(82, 157, 255, 0.767);
+                    -moz-box-shadow: 0px 0px 10px 10px rgba(82, 157, 255, 0.767);
+                    box-shadow: 0px 0px 10px 10px rgba(82, 157, 255, 0.767);
+                }  
                 
             }
             .collapsed{
@@ -534,7 +557,6 @@
             display: none;
         }
         .title2-custom{
-            font-size: 70px;
             max-width: 100%;
         }
     }
@@ -554,7 +576,6 @@
             clip-path: polygon(0 25%, 25% 0, 100% 0, 100% 100%, 0 100%);
         }
         .title3-custom{
-            font-size: 70px;
             max-width: 100%;
         }
 
@@ -567,6 +588,20 @@
         .img-div-custom{
             object-position: 50% 50%;
             width: 650px;
+        }
+        .menu-icon-custom{
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-image: url('./imgs/icones_sprite.png');
+            background-repeat: no-repeat;
+            background-position: 94% 50%;
+            background-size: cover;
+            &:hover{
+                -webkit-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+                -moz-box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+                box-shadow: 0px 0px 56px 5px rgba(82, 157, 255, 0.767);
+            }
         }
     }
 }
