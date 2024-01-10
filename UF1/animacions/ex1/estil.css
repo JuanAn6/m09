@@ -1,0 +1,37 @@
+html body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #090979 39%, #005b6e 100%);
+}
+html body main {
+  height: 100%;
+  width: 100%;
+}
+html body .esfera {
+  position: relative;
+  width: 30%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-image: url('planeta.png');
+  background-size: contain;
+  background-position: 50% 50%;
+}
+html body .esfera .nau {
+  position: absolute;
+  width: 20%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-image: url('satelite.png');
+  background-size: contain;
+  top: 50%;
+  left: 50%;
+  transform: rotate(0deg) translateX(350%) rotate(0deg) translate(-50%, -50%);
+  transition: transform 2000ms;
+  transform-origin: 0% 0%;
+}
+html body .esfera:hover .nau {
+  transform: rotate(360deg) translateX(350%) rotate(360deg) translate(-50%, -50%);
+}
