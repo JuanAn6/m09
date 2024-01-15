@@ -1,5 +1,6 @@
 @planeta: 30%;
-@nau : 20%;
+@satelit : 20%;
+@nau: 20%;
 html{
     body{
         display: flex;
@@ -20,18 +21,40 @@ html{
             background-image: url('./planeta.png');
             background-size: contain;
             background-position: 50% 50%;
+
+            .satelit{
+                position:absolute;
+                width: @satelit;
+                aspect-ratio: 1/1;
+                //aspect-ratio: 4/20;
+                border-radius: 50%;
+                background-image: url('./satelite.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+    
+                top: 50%;
+                left: 50%;
+                transform: rotate(0deg) translateX((100% + 0.5 * 100% * (100%/@satelit))) rotate(0deg) translate(-50%,-50%);
+                transition: transform 2000ms;
+                transform-origin:0% 0%;
+               
+            }
+
             .nau{
                 position:absolute;
                 width: @nau;
                 aspect-ratio: 1/1;
                 //aspect-ratio: 4/20;
                 border-radius: 50%;
-                background-image: url('./satelite.png');
+                background-image: url('./nave.png');
                 background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
     
                 top: 50%;
                 left: 50%;
-                transform: rotate(0deg) translateX((100% + 0.5 * 100% * (100%/@nau))) rotate(0deg) translate(-50%,-50%);
+                transform: rotate(0deg) translateX((200% + 0.5 * 100% * (100%/@nau))) rotate(0deg) translate(-50%,-50%);
                 transition: transform 2000ms;
                 transform-origin:0% 0%;
                
@@ -39,6 +62,9 @@ html{
 
             &:hover{
                 .nau{
+                    transform: rotate(-360deg) translateX((200% + 0.5 * 100% * (100%/@nau))) rotate(0deg) translate(-50%,-50%);
+                }
+                .satelit{
                     transform: rotate(360deg) translateX((100% + 0.5 * 100% * (100%/@nau))) rotate(360deg) translate(-50%,-50%);
                 }
                 

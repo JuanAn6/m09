@@ -19,19 +19,39 @@ html body .esfera {
   background-size: contain;
   background-position: 50% 50%;
 }
-html body .esfera .nau {
+html body .esfera .satelit {
   position: absolute;
   width: 20%;
   aspect-ratio: 1/1;
   border-radius: 50%;
   background-image: url('satelite.png');
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   top: 50%;
   left: 50%;
   transform: rotate(0deg) translateX(350%) rotate(0deg) translate(-50%, -50%);
   transition: transform 2000ms;
   transform-origin: 0% 0%;
 }
+html body .esfera .nau {
+  position: absolute;
+  width: 20%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-image: url('nave.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: 50%;
+  left: 50%;
+  transform: rotate(0deg) translateX(450%) rotate(0deg) translate(-50%, -50%);
+  transition: transform 2000ms;
+  transform-origin: 0% 0%;
+}
 html body .esfera:hover .nau {
+  transform: rotate(-360deg) translateX(450%) rotate(0deg) translate(-50%, -50%);
+}
+html body .esfera:hover .satelit {
   transform: rotate(360deg) translateX(350%) rotate(360deg) translate(-50%, -50%);
 }
