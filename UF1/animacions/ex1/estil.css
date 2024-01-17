@@ -5,6 +5,13 @@ html body {
   height: 100vh;
   background: #020024;
   background: linear-gradient(90deg, #020024 0%, #090979 39%, #005b6e 100%);
+  background-image: url('fons.jpg');
+  background-position: 0%,0%;
+  background-repeat: repeat;
+  transition: 3000ms;
+}
+html body:hover {
+  background-position: 100%,0%;
 }
 html body main {
   height: 100%;

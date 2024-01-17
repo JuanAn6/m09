@@ -1,0 +1,47 @@
+@planeta: 30%;
+@satelit : 20%;
+@nau: 20%;
+html{
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       
+        perspective: 290px;
+            
+        .card{
+            position:relative;
+            width: 25%;
+            height: auto;
+            aspect-ratio: 1920/1200;
+            
+            transform-style: preserve-3d;
+
+            transition:1000ms;
+            
+            &:hover{
+                transform: rotateY(180deg);
+            }
+            .front, .back{
+                background-image: url('./front.jpg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                width: fit-content;
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1920/1200;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+
+                backface-visibility: hidden;
+            }
+            .back{
+                background-image: url('./back.png');
+                transform:rotateY(180deg);
+            }
+        }
+    }
+}

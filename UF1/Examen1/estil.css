@@ -1,0 +1,127 @@
+html #net_iesmila {
+  position: relative;
+}
+html #net_iesmila header {
+  color: white;
+}
+html #net_iesmila header .back {
+  background-color: #2f8a90;
+}
+html #net_iesmila header .back1 {
+  background-color: #33969d;
+}
+html #net_iesmila header .sign_in_button {
+  color: white;
+  background-color: transparent;
+  border: 2px white solid;
+  border-radius: 15px;
+}
+html #net_iesmila header .sign_in_button:hover {
+  background-color: #f28369;
+}
+html #net_iesmila header .a_login {
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+}
+html #net_iesmila header .a_login:hover {
+  background-color: #f28369;
+}
+html #net_iesmila header .search {
+  background-color: white;
+}
+html #net_iesmila header .search input {
+  border: none;
+}
+html #net_iesmila header .search i {
+  color: #484f5c;
+}
+html #net_iesmila header a {
+  color: white;
+  text-decoration: none;
+}
+html #net_iesmila img {
+  width: 50px;
+}
+html #net_iesmila main {
+  background-image: url('images/teens.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  color: white;
+  min-height: 500px;
+  z-index: 0;
+}
+html #net_iesmila main button {
+  color: white;
+  border: none;
+  border-radius: 20px;
+  background-color: #f28369;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+html #net_iesmila main button:hover {
+  background-color: #945648;
+}
+html #net_iesmila main div {
+  z-index: 2;
+}
+html #net_iesmila main .backcustom {
+  position: absolute;
+  display: block;
+  background-color: #33969d6b;
+  width: 100%;
+  height: 500px;
+  clip-path: polygon(0 0, 60% 0, 35% 100%, 0% 100%);
+  z-index: 1;
+}
+html #net_iesmila .cards-container {
+  position: relative;
+  transform: translateY(-50%);
+}
+html #net_iesmila .cards-container .card {
+  position: relative;
+  width: 70%;
+  height: auto;
+  -webkit-box-shadow: 0px 72px 53px -68px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 72px 53px -68px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 72px 53px -68px rgba(0, 0, 0, 0.75);
+}
+html #net_iesmila .cards-container .card i {
+  display: block;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  background-color: #2f8a90;
+  position: absolute;
+  bottom: 5%;
+  right: -5%;
+}
+html #net_iesmila .cards-container .card i:hover {
+  cursor: pointer;
+}
+html #net_iesmila footer {
+  background-color: #2f8a90;
+  color: white;
+}
+html #net_iesmila footer a {
+  color: white;
+  text-decoration: none;
+}
+html #net_iesmila footer li {
+  border-bottom: 1px solid white;
+  padding-right: 30px;
+}
+html #net_iesmila footer li:hover {
+  background-color: #f28369;
+}
+@media screen and (max-width: 990px) {
+  html #net_iesmila .cards-container {
+    position: relative;
+    transform: translateY(0%);
+  }
+  html #net_iesmila .cards-container .card {
+    width: 90%;
+  }
+}
