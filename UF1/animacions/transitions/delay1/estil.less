@@ -10,6 +10,7 @@ html{
         color:white;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         main{
+            background-color: rgb(56, 56, 56);
             overflow: hidden;
             position:relative;
             width: 600px;
@@ -47,7 +48,9 @@ html{
                 transition: 1000ms;
                 transition-delay: 0.3s;
             }
-
+            h2, p, button{
+                transition: 500ms;
+            }
             h2{
                 width: 90%;
                 background-color: black;
@@ -60,7 +63,7 @@ html{
                 top:15%;
                 left: 50%;
                 transform: translateY(-1000%) translate(-50%);
-                transition: 500ms;
+                
             }
 
             p{
@@ -70,12 +73,12 @@ html{
                 top:50%;
                 left: 50%;
                 transform:translateY(-1000%) translate(-50%,-50%);
-                transition: 500ms;
+
             }
             button{
 
                 padding: 20px;
-                background-color: rgb(53, 53, 53);
+                background-color: rgb(27, 27, 27);
                 border:none;
                 border-radius: 10px;
                 color:white;
@@ -86,13 +89,6 @@ html{
                 left: 50%;
                 transform:translateY(-1000%) translate(-50%);
 
-                transition:500ms;
-                // transition-delay: 0s;
-
-                // &:hover{
-                //     transition-delay: 0s;
-                //     background-color: black;
-                // }
             }
             
             
