@@ -83,10 +83,12 @@ function validarNif(){
     
     
     let lletres = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
-    let lletraCorrecta = !isNaN(Number($(nif).val().trim().substr(0, $(nif).val().length-1))) ? lletres[Number($(nif).val().trim().substr(0, $(nif).val().length-1)) % 23] : null ;
+    
+    // Abans de fer la operació es comprova que el numero de dni es realment un numero y no es 0 
+    let dniNumber = Number($(nif).val().trim().substr(0, $(nif).val().length-1))
+    let lletraCorrecta = !isNaN(dniNumber) && dniNumber != 0 ? lletres[dniNumber % 23] : null ;
 
-    console.log(lletraCorrecta);
-
+    
     if($(nif).val().length == 0){
         
         $(nif).addClass('border-red')
@@ -118,7 +120,6 @@ function validarDataNaix(){
         $(data_naix).removeClass('border-red')
     }
 
-    console.log($(data_naix).val().length);
     
     if($(data_naix).val().length == 0){
         
@@ -159,7 +160,7 @@ function validarPass(){
         $(pass).after($(error).text('Ha de tenir minim 8 caracters').clone());
         
         return 0;
-    }else if(!$(pass).val().trim().match(/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@#$%^&+=!¡?¿.,;:_\-\\]).+$/)){
+    }else if(! (/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@#$%^&+=!¡?¿.,;:_\-\\]).+$/).test($(pass).val().trim())){
 
         $(pass).addClass('border-red')
         $(pass).after($(error).text('Ha de tenir minim 1 numero i un caracter especial').clone());
